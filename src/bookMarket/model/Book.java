@@ -6,7 +6,7 @@ public class Book {
 	private String author;
 	private String publisher;
 	private int price;
-
+	
 	public Book(int bookId, String title, String author, String publisher, int price) {
 		this.bookId = bookId;
 		this.title = title;
@@ -14,30 +14,26 @@ public class Book {
 		this.publisher = publisher;
 		this.price = price;
 	}
-
-	@Override
-	public String toString() {
-		return bookId + ", " + title + ", " + author + ", " + publisher + ", " + price + "원";
-	}
-
+	
 	public int getBookId() {
 		return bookId;
 	}
-
 	public String getTitle() {
 		return title;
 	}
-
 	public String getAuthor() {
 		return author;
 	}
-
 	public String getPublisher() {
 		return publisher;
 	}
-
 	public int getPrice() {
 		return price;
 	}
 
+	@Override
+	public String toString() {
+		return bookId + ", " + title + ", " + author + ", " + publisher
+				+ ", " + price + "원";
+	}
 }
